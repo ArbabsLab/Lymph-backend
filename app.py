@@ -13,7 +13,7 @@ MODEL_PATH = "lymphmodel.pkl"
 
 
 if not os.path.exists(MODEL_PATH):
-    print("Downloading model from Hugging Face...")
+    print("Downloading model from Hugging Face")
     r = requests.get(MODEL_URL)
     with open(MODEL_PATH, "wb") as f:
         f.write(r.content)
